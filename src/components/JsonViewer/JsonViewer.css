@@ -1,0 +1,31 @@
+.json-viewer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.json-viewer__controls {
+  display: flex;
+  gap: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.json-viewer__btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: var(--color-bg);
+  transition: background-color 0.2s ease;
+}
+
+.json-viewer__btn:hover {
+  background: #e0e0e0;
+}
+
+.json-viewer__tree {
+  overflow: auto;
+  max-height: 500px;
+  padding: var(--spacing-sm);
+}

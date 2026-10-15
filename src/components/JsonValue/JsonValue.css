@@ -1,0 +1,35 @@
+.json-value {
+  word-break: break-all;
+}
+
+.json-value--string {
+  color: var(--color-string);
+}
+
+.json-value--string::before {
+  content: '"';
+}
+
+.json-value--string::after {
+  content: '"';
+}
+
+.json-value--number {
+  color: var(--color-number);
+}
+
+.json-value--boolean {
+  color: var(--color-boolean);
+  font-weight: 500;
+}
+
+.json-value--null {
+  color: var(--color-null);
+  font-style: italic;
+}
+
+.json-value--highlight {
+  background-color: #fff3cd;
+  padding: 0 2px;
+  border-radius: 2px;
+}
